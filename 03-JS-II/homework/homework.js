@@ -192,7 +192,8 @@ function tablaDelSeis(){
   var array= [];
   for (var i = 0 ; i < 11 ; i++){
     array.push(i*6)
-  } return array
+  }
+   return array
 }
 
 function tieneTresDigitos(numero){

@@ -1,6 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 const { RuleTester } = require("eslint");
+const { logTask } = require("simple-git/src/lib/tasks/log");
 
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = 'hola';
@@ -71,12 +72,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x === y){
-    return true;
-  } else {
-    return false;
-  }
-}
+  return x === y
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -260,16 +256,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length > 1){
-    return "Dato incorrecto"
-  }
-  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-    return "Es vocal"
-  }
-  return "Dato incorrecto"
+  if(letra.length > 1) {
+    return 'dato incorrecto'
+  } else if { letra == 'a' || letra == 'e'|| letra == 'i'|| letra == 'o' || letra == 'u'
+} {
+  return esvocal;
+} else { 
+  return 'dato incorrecto';
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
